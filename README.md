@@ -3,7 +3,7 @@
 #### Simple workshop project - teacher list CRUD
 
 
-#####Scope:
+####Scope:
 * JEE web app - list, add, edit, delete teacher (Wildfly),
 * persist data in MYSQL,
 * use Docker
