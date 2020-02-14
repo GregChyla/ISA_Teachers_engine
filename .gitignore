@@ -1,1 +1,7 @@
 isa_workshop.iml
+.idea
+src/main/resources/
+
+/src/main/webapp/WEB-INF/jboss-web.xml
+/src/main/webapp/WEB-INF/web.xml
+/target/

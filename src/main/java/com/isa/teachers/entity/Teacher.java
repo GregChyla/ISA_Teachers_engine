@@ -1,10 +1,13 @@
 package com.isa.teachers.entity;
 
+import jdk.jfr.Name;
+
 import javax.persistence.*;
 
 @NamedQueries({
 
-        @NamedQuery (name = "Teacher.findById", query = "select t from Teacher t where t.id = :id")
+        @NamedQuery (name = "Teacher.findById", query = "select t from Teacher t where t.id = :id"),
+        @NamedQuery(name = "Teacher.findAll", query = "select t from Teacher t")
 })
 
 @Entity
@@ -14,7 +17,6 @@ public class Teacher {
     @Id
     @GeneratedValue
     private Long id;
-
     private String firstName;
     private String lastName;
     private String email;
@@ -22,6 +24,10 @@ public class Teacher {
 
     public Long getId() {
         return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public String getFirstName() {
